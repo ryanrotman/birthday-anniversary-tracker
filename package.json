@@ -1,0 +1,20 @@
+{
+  "name": "birthday-anniversary-tracker",
+  "version": "1.0.0",
+  "description": "This is a personal side project to test my skills using express, mongodb, and mongoose to build an application that will allow family members to enter and view the family's birthdays and anniversaries.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanrotman/birthday-anniversary-tracker.git"
+  },
+  "author": "Ryan Rotman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanrotman/birthday-anniversary-tracker/issues"
+  },
+  "homepage": "https://github.com/ryanrotman/birthday-anniversary-tracker#readme"
+}
