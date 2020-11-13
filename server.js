@@ -22,3 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/familyEvent", {
     useNewUrlParser: true,
     useFindAndModify: false
 });
+
+app.listen(PORT, () => {
+    console.log(`Server is live @ http://localhost:${PORT}`);
+  });
