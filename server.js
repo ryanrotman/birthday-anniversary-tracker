@@ -15,7 +15,7 @@ app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true 
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", handlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/familyEvent", {
@@ -23,6 +23,11 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/familyEvent", {
     useFindAndModify: false
 });
 
+// Routes
+require("./routes/html-routes")(app);
+require("./routes/api-routes")(app);
+
+// PORT Listener
 app.listen(PORT, () => {
     console.log(`Server is live @ http://localhost:${PORT}`);
   });
