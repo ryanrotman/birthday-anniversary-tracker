@@ -22,12 +22,38 @@
     </head>
 
     <body>
+        {{!-- Navbar / Header --}}
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Family Birthdays &amp; Anniversaries</a>
+                {{!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul> --}}
+            </div>
+        </nav>
+
+        {{!-- Mobible Collapse Button  --}}
+        {{!-- <ul class="sidenav right" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul> --}}
 
         {{{ body }}}
 
-        <!-- Compiled and minified JavaScript -->
+        {{!-- jQuery --}}
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            // Sidenav init
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
     </body>
 
 </html>
