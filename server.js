@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/familyEvent", {
 
 // Routes
 require("./routes/html-routes")(app);
-require("./routes/api-routes")(app);
+// require("./routes/api-routes")(app);
 
 // PORT Listener
 app.listen(PORT, () => {
